@@ -6,109 +6,61 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:weightSum="2"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:weightSum="4"
-        android:orientation="vertical"
-        android:layout_weight="1"
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textAllCaps="true"
+        android:textColor="#f20"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="App game lô tô"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:imeOptions="actionNext"
+        android:id="@+id/editTextMin"
+        android:inputType="number"
+        android:maxLength="3"
+        android:layout_marginTop="50dp"
+        android:hint="Nhập số min"
         android:layout_width="match_parent"
-        android:layout_height="0dp">
-        <TextView
-            android:layout_weight="1"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:gravity="center"
-            android:textColor="#000000"
-            android:text="A"
-            android:background="#f20"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"/>
+        android:layout_height="wrap_content"/>
 
-        <TextView
-            android:layout_weight="1"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:gravity="center"
-            android:textColor="#000000"
-            android:text="B"
-            android:background="#00FF0D"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"/>
-
-        <TextView
-            android:layout_weight="1"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:gravity="center"
-            android:textColor="#000000"
-            android:text="C"
-            android:background="#425902"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"/>
-
-        <TextView
-            android:layout_weight="1"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:gravity="center"
-            android:textColor="#000000"
-            android:text="D"
-            android:background="#00A6FF"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:weightSum="4"
-        android:orientation="horizontal"
-        android:layout_weight="1"
+    <EditText
+        android:imeOptions="actionDone"
+        android:id="@+id/editTextMax"
+        android:inputType="number"
+        android:maxLength="3"
+        android:layout_marginTop="50dp"
+        android:hint="Nhập số max"
         android:layout_width="match_parent"
-        android:layout_height="0dp">
-        <TextView
-            android:layout_weight="1"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:gravity="center"
-            android:textColor="#000000"
-            android:text="A"
-            android:background="#f20"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"/>
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/buttonRandom"
+        android:layout_gravity="center_horizontal"
+        android:text="Random"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
         <TextView
-            android:layout_weight="1"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:gravity="center"
-            android:textColor="#000000"
-            android:text="B"
-            android:background="#00FF0D"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"/>
+            android:textSize="14sp"
+            android:id="@+id/textViewResult"
+            android:text="1 - 2 -3 - 4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
-        <TextView
-            android:layout_weight="1"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:gravity="center"
-            android:textColor="#000000"
-            android:text="C"
-            android:background="#425902"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"/>
-
-        <TextView
-            android:layout_weight="1"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:gravity="center"
-            android:textColor="#000000"
-            android:text="D"
-            android:background="#00A6FF"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"/>
-    </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
